@@ -68,7 +68,7 @@ social-network-links:
   rss: true
   email: "scotoma8@gmail.com"
   github: Scotoma8
-  twitter: Scotoma8
+  twitter: Sco04384505
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
@@ -88,7 +88,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "cyber.hunttalk.cn"  # eg. "deanattali.com/beautiful-jekyll"
+# url-pretty: "cyber.hunttalk.cn"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
