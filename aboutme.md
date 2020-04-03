@@ -5,7 +5,7 @@ title: About me
 
 Nickname:Scotoma8
 
-- Security Researcher
+- Pentester
 - Base Beijing
 - Graduated from TYUT
 - Work at QAX
