@@ -1,9 +1,9 @@
 ---
 layout: post
-title: RetrieveBot-资产信息收集与查询
+title: RetrieveBot资产信息收集与查询
 subtitle: Shell Script
 bigimg: /img/path.jpg
-tags: [Tool]
+tags: [Tools]
 ---
 
 # retrievebot
@@ -14,8 +14,7 @@ Disclaimer:
 &emsp;&emsp;This tool was developed from the kali platform and used only for education purpose or authorized situations.   
 &emsp;&emsp;Any illegal use has nothing to do with the author.
 
-Usage:
-
+Usage:   
 	./retrievebot -h
 	[*] RetrieveBot - A Tool of Asset Information Collecting
 	[*] There're two modes for this tool:
