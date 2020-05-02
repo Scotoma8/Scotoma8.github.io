@@ -14,7 +14,7 @@ Disclaimer:
 &emsp;&emsp;This tool was developed from the kali platform and used only for education purpose or authorized situations.   
 &emsp;&emsp;Any illegal use has nothing to do with the author.
 
-Usage:   
+Usage:<br>
 	./retrievebot -h
 	[*] RetrieveBot - A Tool of Asset Information Collecting
 	[*] There're two modes for this tool:
