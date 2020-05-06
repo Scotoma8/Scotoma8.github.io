@@ -29,12 +29,13 @@ Usage:
 	[*]     -c:quering subdomain information.
 	[*]     -w:quering whois information of ip or domain name.
 	[*]     -t:quering whatweb information of ip or domain name.
+	[*]     -r:quering subdirs information of url.
 	
 	./retrievebot -s
-	[*] Usage : /usr/bin/retrievebot -s -Functionality(-i,-d,-p,-c,-w,-t) -h
+	[*] Usage : /usr/bin/retrievebot -s -Functionality(-i,-d,-p,-c,-w,-t,-r) -h
 	
 	./retrievebot -m
-	[*] Usage : /usr/bin/retrievebot -m -Functionality(-i,-d,-p,-c,-w,-t) -h
+	[*] Usage : /usr/bin/retrievebot -m -Functionality(-i,-d,-p,-c,-w,-t,-r) -h
 	
 	./retrievebot -s -i
 	[*] Single ip info script
