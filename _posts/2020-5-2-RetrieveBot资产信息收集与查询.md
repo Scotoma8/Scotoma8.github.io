@@ -30,12 +30,13 @@ Usage:
 	[*]     -w:quering whois information of ip or domain name.
 	[*]     -t:quering whatweb information of ip or domain name.
 	[*]     -r:quering subdirs information of url.
+	[*]     -l:crawling words and email addresses of url.
 	
 	./retrievebot -s
-	[*] Usage : /usr/bin/retrievebot -s -Functionality(-i,-d,-p,-c,-w,-t,-r) -h
+	[*] Usage : /usr/bin/retrievebot -s -Functionality(-i,-d,-p,-c,-w,-t,-r,-l) -h
 	
 	./retrievebot -m
-	[*] Usage : /usr/bin/retrievebot -m -Functionality(-i,-d,-p,-c,-w,-t,-r) -h
+	[*] Usage : /usr/bin/retrievebot -m -Functionality(-i,-d,-p,-c,-w,-t,-r,-l) -h
 	
 	./retrievebot -s -i
 	[*] Single ip info script
