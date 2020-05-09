@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RetrieveBot资产信息收集与查询
-subtitle: Shell Script
+subtitle: Shell Script [Under constant development]
 bigimg: /img/path.jpg
 tags: [Tools]
 ---
