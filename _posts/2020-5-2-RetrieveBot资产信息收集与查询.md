@@ -46,7 +46,7 @@ Usage:
 	./retrievebot -m -i
 	[*] Multi ip info script
 	[*] Usage : /usr/bin/retrievebot -m -i <file name of ips>   
-	
+
 Issue:   	
 
 	a).proxychains + nmap result in segmentation fault:   
