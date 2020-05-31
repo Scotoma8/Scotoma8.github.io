@@ -31,6 +31,7 @@ Usage:
 	[*]     -t:quering whatweb information of ip or domain name.
 	[*]     -r:quering subdirs information of url.
 	[*]     -l:crawling words and email addresses of url.
+	[*]     -e:requesting domain name through HTTP&HTTPS.
 	
 	./retrievebot -s
 	[*] Usage : /usr/bin/retrievebot -s -Functionality(-i,-d,-p,-c,-w,-t,-r,-l) -h
@@ -44,4 +45,21 @@ Usage:
 	
 	./retrievebot -m -i
 	[*] Multi ip info script
-	[*] Usage : /usr/bin/retrievebot -m -i <file name of ips>
+	[*] Usage : /usr/bin/retrievebot -m -i <file name of ips>   
+	
+Issue:   	
+
+	a).proxychains + nmap result in segmentation fault:   
+	1.export http_proxy and https_proxy   
+	2.use proxychains-ng   
+	sudo apt-get install git gcc   
+	sudo apt-get remove proxychains   
+	git clone https://github.com/rofl0r/proxychains-ng.git   
+	cd proxychains-ng/   
+	./configure --prefix=/usr --sysconfdir=/etc   
+	make   
+	sudo make install   
+	sudo make install-config   
+
+	b).dirb use export http_proxy result in error - unsupported socks:   
+	1.use proxychains or proxychains-ng   
