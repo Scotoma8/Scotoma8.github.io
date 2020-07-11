@@ -8,7 +8,7 @@ tags: [Red-Team]
 
 **文章结构:**   
 
-![Intranet_Penetration.png](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/Intranet_Penetration/https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/Intranet_Penetration/media/Intranet_Penetration.png)
+![Intranet_Penetration.png](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/Intranet_Penetration/media/Intranet_Penetration.png)
 
 **文章内容:**   
 

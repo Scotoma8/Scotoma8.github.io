@@ -8,7 +8,7 @@ tags: [Red-Team]
 
 **文章结构:**   
 
-![ATT&CK_Privilege_Persistence.png](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Persistence/https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Persistence/media/ATT%26CK_Privilege_Persistence.png)
+![ATT&CK_Privilege_Persistence.png](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Persistence/media/ATT%26CK_Privilege_Persistence.png)
 
 **文章内容:**   
 

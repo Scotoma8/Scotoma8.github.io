@@ -8,7 +8,7 @@ tags: [Red-Team]
 
 **文章结构:**   
 
-![Session_Linkage.png](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/Session_Linkage/https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/Session_Linkage/media/Session_Linkage.png)
+![Session_Linkage.png](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/Session_Linkage/media/Session_Linkage.png)
 
 **文章内容:**   
 
