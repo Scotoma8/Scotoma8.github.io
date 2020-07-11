@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RetrieveBot - Information Gathering&Quering
+title: RetrieveBot - Info Gathering&Querying
 subtitle: Shell Script
 bigimg: /img/path.jpg
 tags: [Red-Team]
