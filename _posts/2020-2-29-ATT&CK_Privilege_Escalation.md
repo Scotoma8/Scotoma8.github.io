@@ -8,7 +8,7 @@ tags: [Red-Team]
 
 **文章结构:**   
 
-![ATT&CK_Privilege_Escalation.jpg](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/ATT&CK_Privilege_Escalation.png)
+![ATT&CK_Privilege_Escalation.png](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/ATT&CK_Privilege_Escalation.png)
 
 **文章内容:**   
 
