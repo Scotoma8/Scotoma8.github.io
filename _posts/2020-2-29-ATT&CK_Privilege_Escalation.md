@@ -8,7 +8,7 @@ tags: [Red-Team]
 
 **文章结构:**   
 
-![ATT&CK_Privilege_Escalation.jpg](media_pe/ATT&CK_Privilege_Escalation.png)
+![ATT&CK_Privilege_Escalation.jpg](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/ATT&CK_Privilege_Escalation.png)
 
 **文章内容:**   
 
@@ -19,9 +19,9 @@ tags: [Red-Team]
 Regardless of a SQL Server service account’s privileges on the operating system,
 it has sysadmin privileges in SQL Server by default.
 
-![](media_pe/2dd771f06e7b002640d92678a3ad03b0.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/2dd771f06e7b002640d92678a3ad03b0.png)
 
-![](media_pe/d35e152d12a8689c8bb5b949882ac2ef.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/d35e152d12a8689c8bb5b949882ac2ef.png)
 
 A few handy functions for impersonating the SQL Server service account with
 PowerUpSQL.
@@ -64,7 +64,7 @@ ServiceAccount : NT Service\\MSSQL\$BOSCHSQL
 
 State : Running
 
-![](media_pe/ffd3e8fce802abb6795c6ccafaf3d476.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/ffd3e8fce802abb6795c6ccafaf3d476.png)
 
 4. Verify that the local administrator does not have sysadmin privileges on the
 local SQL Server instance using the Get-SQLServerInfo function.
@@ -110,7 +110,7 @@ ActiveSessions : 1
 You should notice that the “CurrentLogin” is your current user account, and
 “IsSysadmin” is “No”.
 
-![](media_pe/25b76b54f273d58900618c0757ee6081.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/25b76b54f273d58900618c0757ee6081.png)
 
 5. Impersonate the SQL Server service account for the target instance.
 
@@ -132,7 +132,7 @@ VERBOSE: MSSQLSRV04\\BOSCHSQL : Selecting token by Process object
 
 VERBOSE: MSSQLSRV04\\BOSCHSQL : Done.
 
-![](media_pe/f711cdad43c7e5d021c9a8c083ef0ded.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/f711cdad43c7e5d021c9a8c083ef0ded.png)
 
 6. Verify that the SQL Server service account for the target instance was
 successful by running the Get-SQLServerInfo command.
@@ -218,7 +218,7 @@ All done.
 When the function is done running you should have a cmd.exe window for each of
 the services.
 
-![](media_pe/10455830ef9ab3875678f7e1945ff31e.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/10455830ef9ab3875678f7e1945ff31e.png)
 
 Get-SQLServerPasswordHash
 
@@ -333,21 +333,21 @@ mode”.
 It is the oldest editor which was developed in 1969 in the UNIX and is succeeded
 by vi and emacs text editor.
 
-![](media_pe/fdb240d2ec29459e604ecec4ed3aca25.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/fdb240d2ec29459e604ecec4ed3aca25.png)
 
-![](media_pe/d7451d234c9355051d576a8f28e1f758.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/d7451d234c9355051d576a8f28e1f758.png)
 
-![](media_pe/012ae4ae53819c9e85bab886db12c7b3.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/012ae4ae53819c9e85bab886db12c7b3.png)
 
-![](media_pe/6b5c8e0a3439124448e423237e34b3c8.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/6b5c8e0a3439124448e423237e34b3c8.png)
 
-![](media_pe/645110cd1db9086d639edff9f0a70a94.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/645110cd1db9086d639edff9f0a70a94.png)
 
-![](media_pe/aada54f8c45ce48081cad1da300b016a.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/aada54f8c45ce48081cad1da300b016a.png)
 
-![](media_pe/6f1640ad7143e19d993a1bb3d96948b1.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/6f1640ad7143e19d993a1bb3d96948b1.png)
 
-![](media_pe/ed867b18f7864609317794b747181d61.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/ed867b18f7864609317794b747181d61.png)
 
 Exploiting ed
 
@@ -358,21 +358,21 @@ to set up our lab of ed command with administrative rights. After that, we will
 check for the “ed command” that what effect it has after getting sudo rights and
 how we can use it more for privilege escalation.
 
-![](media_pe/b41c6b6a0c7b6d35bcf9e6476352480b.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/b41c6b6a0c7b6d35bcf9e6476352480b.png)
 
-![](media_pe/20deb9f23ff3bcfbc60c33f55f780532.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/20deb9f23ff3bcfbc60c33f55f780532.png)
 
-![](media_pe/65c6df9680dc603acfe6a1ab8e2a0fc7.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/65c6df9680dc603acfe6a1ab8e2a0fc7.png)
 
-![](media_pe/1933ff8c827ac6972c2383cc6e06e91d.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/1933ff8c827ac6972c2383cc6e06e91d.png)
 
-![](media_pe/ea6afcb39dff128d177a61a6580905fe.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/ea6afcb39dff128d177a61a6580905fe.png)
 
 Now after knowing the fact that test user attains sudo rights so, taking this
 benefit here we can use ed command to access empty buffer to call bash/sh shell,
 with higher privileges if permitted on sudo.
 
-![](media_pe/2e31012b0b3c0422707d2c7f8255b844.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/2e31012b0b3c0422707d2c7f8255b844.png)
 
 **Privilege Escalation by injecting process possessing sudo tokens(已复现):**
 
@@ -384,7 +384,7 @@ user in /var/run/sudo/ts/[username]. These files contain both successful and
 failed authentications, then sudo uses these files to remember all the
 authenticated processes.
 
-![](media_pe/e0040b855040554bac9babc91a06d452.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/e0040b855040554bac9babc91a06d452.png)
 
 This repository provides you:
 
@@ -425,17 +425,17 @@ step one:
 
 默认是1，重启后恢复默认
 
-![](media_pe/4a5804ef3ec7f8dbefbeb4c57125a759.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/4a5804ef3ec7f8dbefbeb4c57125a759.png)
 
 启动具有有效token且相同uid的进程(默认15mins内有效)
 
-![](media_pe/8b9c4e2b6830be36865d3c8bbb94c9d1.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/8b9c4e2b6830be36865d3c8bbb94c9d1.png)
 
 step two:
 
 打开新的shell执行exp脚本(sudo输入密码时ctrl+c终止，此操作会创建一个无效的token)
 
-![](media_pe/84f7a8d47e259d9159e3059c8853552b.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/84f7a8d47e259d9159e3059c8853552b.png)
 
 exploit v2 creates a suid sh in /tmp/sh
 
@@ -543,17 +543,17 @@ To Exploiting sudo user u need to find which command u have to allow.
 
 sudo -l
 
-![](media_pe/55e8f3370b0a5a1f25d53abe5bbbf6ab.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/55e8f3370b0a5a1f25d53abe5bbbf6ab.png)
 
 Escalate Privilege to root user
 
-![](media_pe/3599e4238d10445a8576357509e66116.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/3599e4238d10445a8576357509e66116.png)
 
-![](media_pe/2b485e7a1cff27bee3b2326ce85febb4.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/2b485e7a1cff27bee3b2326ce85febb4.png)
 
-![](media_pe/832e1fcd44954e8dcdf42184dd8d3ecc.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/832e1fcd44954e8dcdf42184dd8d3ecc.png)
 
-![](media_pe/734e34fab6fbadd15a11896a7b6a9f5d.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/734e34fab6fbadd15a11896a7b6a9f5d.png)
 
 sudo nmap --interactive(**nmap version 2.02 to 5.21**)
 
@@ -561,51 +561,51 @@ nmap\> !sh
 
 sh-4.1\#
 
-![](media_pe/54a1d0401b50a1520c07381ea141df47.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/54a1d0401b50a1520c07381ea141df47.png)
 
-![](media_pe/8e5ebabee8305683d47e65a28be5fab4.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/8e5ebabee8305683d47e65a28be5fab4.png)
 
-![](media_pe/468e6f2e4ddb8b2f8aa17c99248210d8.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/468e6f2e4ddb8b2f8aa17c99248210d8.png)
 
-![](media_pe/e391df41d37ed0528c8bdcae32b955d9.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/e391df41d37ed0528c8bdcae32b955d9.png)
 
-![](media_pe/828fa5ec5e8aad658cdb9739e7a6245c.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/828fa5ec5e8aad658cdb9739e7a6245c.png)
 
-![](media_pe/0e7a11114dddd5278cb63d3a128d7a6f.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/0e7a11114dddd5278cb63d3a128d7a6f.png)
 
-![](media_pe/fcc71f84a7ff7c81f787a0a88508149f.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/fcc71f84a7ff7c81f787a0a88508149f.png)
 
-![](media_pe/8c37e212552bb364b26e9397c0119e05.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/8c37e212552bb364b26e9397c0119e05.png)
 
-![](media_pe/00cd9dd2f1f4d9c4fe61e0fc41a651e2.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/00cd9dd2f1f4d9c4fe61e0fc41a651e2.png)
 
 user:touhid password:test
 
-![](media_pe/4bb781edcbffb6048a157c2f931d8325.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/4bb781edcbffb6048a157c2f931d8325.png)
 
-![](media_pe/c9227c5cae84a3c3fc505eb246954cbe.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/c9227c5cae84a3c3fc505eb246954cbe.png)
 
-![](media_pe/db97dcbff00f13271aa1492bef227c37.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/db97dcbff00f13271aa1492bef227c37.png)
 
-![](media_pe/d471469b208f0b818762958124a5f8a9.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/d471469b208f0b818762958124a5f8a9.png)
 
 user:hacker password:test
 
-![](media_pe/92d3ab1bc1be08cf3982a35116221bb8.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/92d3ab1bc1be08cf3982a35116221bb8.png)
 
-![](media_pe/44f857c5ca97d83824884adc6f6e5166.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/44f857c5ca97d83824884adc6f6e5166.png)
 
-![](media_pe/cd2a12ebabece3170c73ac416a37fd6d.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/cd2a12ebabece3170c73ac416a37fd6d.png)
 
-![](media_pe/84a34c518499d641924bc98d2765f55e.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/84a34c518499d641924bc98d2765f55e.png)
 
-![](media_pe/f58c0d3bf9a176c529e3dd1ef3552e12.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/f58c0d3bf9a176c529e3dd1ef3552e12.png)
 
-![](media_pe/4786fd585442d66d2daf128438095f83.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/4786fd585442d66d2daf128438095f83.png)
 
-![](media_pe/0db940dff09c29f296ce0c37ed3b0047.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/0db940dff09c29f296ce0c37ed3b0047.png)
 
-![](media_pe/57e26b58c8b09a9d61534c46903766fb.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/57e26b58c8b09a9d61534c46903766fb.png)
 
 **sudo apache2 -f /etc/shadow**
 
@@ -636,16 +636,16 @@ linux system. On linux the username/password details are stored in the following
 
 >   /etc/shadow
 
-![](media_pe/f9216291a0200f162db9cbdca98855af.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/f9216291a0200f162db9cbdca98855af.png)
 
-![](media_pe/9aad687ff69a06e5dac54ce82b35df62.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/9aad687ff69a06e5dac54ce82b35df62.png)
 
-![](media_pe/aaf7f398e9471a027ea4186739386497.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/aaf7f398e9471a027ea4186739386497.png)
 
 Now john was able to crack, only because the password was present in the
 password list. If it were not there then john would have failed.
 
-![](media_pe/a9f17d661fd213ea8bc7f908dc35d86c.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/a9f17d661fd213ea8bc7f908dc35d86c.png)
 
 The 1 password that was left, was of user root. No password in the provided
 wordlist could crack it.
@@ -653,19 +653,19 @@ wordlist could crack it.
 This will try "single crack" mode first, then use a wordlist with rules, and
 finally go for "incremental" mode.
 
-![](media_pe/5d01b87bc68b3ec6b27c2d3bcaa41eea.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/5d01b87bc68b3ec6b27c2d3bcaa41eea.png)
 
-![](media_pe/4584afdd091a56bcae1699c7878f6fe2.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/4584afdd091a56bcae1699c7878f6fe2.png)
 
-![](media_pe/6572672cf9e2d202d48ef15d29e73d1b.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/6572672cf9e2d202d48ef15d29e73d1b.png)
 
-![](media_pe/c18f8e46d424467df1e80f06f33bb937.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/c18f8e46d424467df1e80f06f33bb937.png)
 
 https://github.com/0x00-0x00/FakePip
 
-![](media_pe/263d900842cec12b6bb79617c9174a21.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/263d900842cec12b6bb79617c9174a21.png)
 
-![](media_pe/f9f9a090337757b02b8aefdb9c71a608.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/f9f9a090337757b02b8aefdb9c71a608.png)
 
 **\#3). Windows UAC:**
 
@@ -702,7 +702,7 @@ check the signature of a file with a tool named “sigcheck”:
 
 https://docs.microsoft.com/zh-cn/sysinternals/downloads/sysinternals-suite
 
-![](media_pe/ea9a89a85efd606dd0c4f4ca0f8d8f2e.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/ea9a89a85efd606dd0c4f4ca0f8d8f2e.png)
 
 As you can see in the picture above, the program is allowed to elevate itself to
 run in a high integrity context automatically. There is no need for any user
@@ -727,7 +727,7 @@ E.g. fodhelper.exe is looking for
 “HKCU:\\Software\\Classes\\ms-settings\\shell\\open\\command”. By default this
 key does not exist in Windows 10.
 
-![](media_pe/c500726d960f7912f1f608b2019ebb66.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/c500726d960f7912f1f608b2019ebb66.png)
 
 After creation of the key:
 “HKCU:\\Software\\Classes\\ms-settings\\shell\\open\\command”, fodhelper.exe
@@ -736,13 +736,13 @@ will find it and will start looking for the value:
 which it would not look for, if the mentioned key did not exist. As soon as the
 value “DelegateExecute” exists, it will be found, too, even if it is empty.
 
-![](media_pe/1baa9248e4e8fa428876ef982b84e9a6.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/1baa9248e4e8fa428876ef982b84e9a6.png)
 
 Once the value “DelegateExecute” is created, fodhelper.exe will look for the
 default value in:
 “HKCU:\\Software\\Classes\\ms-settings\\shell\\open\\command\\”.
 
-![](media_pe/97e3755b5e869b0857428366cd4f8d1a.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/97e3755b5e869b0857428366cd4f8d1a.png)
 
 This value is the critical point. The registry value
 “shell\\open\\command\\(default)” enables us to provide to the program
@@ -754,19 +754,19 @@ fodhelper.exe will lookup the (default)-value and follow the instructions how to
 behave after the process starts. =\> start cmd.exe which starts powershell.exe
 (just checking if it is possible to pass parameters to cmd.exe, too)
 
-![](media_pe/7ffc55e9d62cc33f3d99b0e0818a3745.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/7ffc55e9d62cc33f3d99b0e0818a3745.png)
 
 As you can see, fodhelper.exe reads the (default)-value and starts cmd.exe with
 the provided parameters.
 
-![](media_pe/154f9946282f5c591504bc91d83000b5.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/154f9946282f5c591504bc91d83000b5.png)
 
 The result is an cmd.exe starting in a high integrity context which starts a
 powershell.exe in a high integrity context. In the picture below, you can see
 both the exact registry structure needed for this proof of concept and the
 cmd.exe started as an administrator.
 
-![](media_pe/2962ed1069131f62c700e94b78b235d9.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/2962ed1069131f62c700e94b78b235d9.png)
 
 To demonstrate this vulnerability, I created and published a script on Github,
 which will create the registry keys, opens up “C:\\Windows\\System32\\cmd.exe /c
@@ -774,11 +774,11 @@ powershell.exe” and which deletes the registry keys.
 
 https://github.com/winscripting/UAC-bypass/blob/master/FodhelperBypass.ps1
 
-![](media_pe/eb27998f7ed6df5ea7d5c154224975e5.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/eb27998f7ed6df5ea7d5c154224975e5.png)
 
 获得administrator运行权限的shell:
 
-![](media_pe/80ab89963236a3b96fbf80cd8e347aa6.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/80ab89963236a3b96fbf80cd8e347aa6.png)
 
 Advantages:
 
@@ -810,7 +810,7 @@ To find this, we simply went through each task and inspected the security
 options for “Run with Highest Privileges” to be checked with a non-elevated User
 Account (such as ‘Users’).
 
-![](media_pe/f7d07df4356fa4142d727c3743fc1945.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/f7d07df4356fa4142d727c3743fc1945.png)
 
 Taking a closer look with procmon, we found that the actual process started by
 the scheduled task, cleanmgr.exe, auto-elevates due to “execute with highest
@@ -819,24 +819,24 @@ privileges” being set in the task configuration.
 Let’s dive in a bit more. When cleanmgr.exe executes, it creates a new folder
 with the name of a GUID in “C:\\Users\\\<username\>\\AppData\\Local\\Temp”.
 
-![](media_pe/3e4bd82d8fc6572062fd671a4b82c1f9.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/3e4bd82d8fc6572062fd671a4b82c1f9.png)
 
 Once cleanmgr.exe creates the temporary folder, it then copies multiple DLLs
 along with “dismhost.exe” into the new folder:
 
-![](media_pe/0d378f4e8907efa071ef7423fe969077.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/0d378f4e8907efa071ef7423fe969077.png)
 
 After copying DismHost.exe and its DLLs to
 “C:\\Users\\\<username\>\\AppData\\Temp\\\<guid\>”, cleanmgr.exe then starts
 “dismhost.exe” out of the newly created path as a high integrity process:
 
-![](media_pe/9bc94c7e5422f519eb6a703ad955570a.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/9bc94c7e5422f519eb6a703ad955570a.png)
 
 Since dismhost.exe launches out of
 “C:\\Users\\\<username\>\\AppData\\Local\\Temp\\\<guid\>”, it begins to load
 DLLs out of the same folder in a certain order:
 
-![](media_pe/ba6692643219277aee6bd0fa80a0f774.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/ba6692643219277aee6bd0fa80a0f774.png)
 
 Because the current medium integrity process has write access to the user’s
 %TEMP% directory, it is possible to hijack a DLL loaded by dismhost.exe and
@@ -854,7 +854,7 @@ DLL into “C:\\Users\\\<username\>\\AppData\\Local\\Temp\\\<guid\>” and namin
 “LogProvider.dll”. Since this action happens before dismhost.exe loads it, it
 will load our DLL instead of the intended one.
 
-![](media_pe/88c301a7270437cdecc07815098b450a.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/88c301a7270437cdecc07815098b450a.png)
 
 Once dismhost.exe loads the DLL, it will load as high integrity, allowing us to
 bypass User Access Control and obtain code execution as a high integrity
@@ -882,11 +882,11 @@ MessageBox one located here: https://github.com/enigma0x3/MessageBox
 
 普通用户(无法观察到C:\\users\\dnu\\appdata\\local\\temp\\GUID目录自动创建和删除):
 
-![](media_pe/c0af12c75c4ca2aee7e9f123a00bb2f7.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/c0af12c75c4ca2aee7e9f123a00bb2f7.png)
 
 本地管理员组用户(可观察到C:\\users\\user1\\appdata\\local\\temp\\GUID目录自动创建和删除):
 
-![](media_pe/47af1a3c5fbb9ca244ef84db74dec6f7.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/47af1a3c5fbb9ca244ef84db74dec6f7.png)
 
 This technique differs from the other public techniques by having a few benefits
 that can be handy:
@@ -909,7 +909,7 @@ majority of the public UAC bypasses rely on the IFileOperation COM object to
 perform a privileged file copy. IFileOperation honors the “Always Notify” UAC
 setting and prompts when set, causing the privileged file copy to fail:
 
-![](media_pe/2fce11a29ea7eaa1ce082f0879d5d78b.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/2fce11a29ea7eaa1ce082f0879d5d78b.png)
 
 This was disclosed to Microsoft Security Response Center (MSRC) on 07/20/2016.
 As expected, they responded by noting that UAC isn’t a security boundary, so
@@ -945,11 +945,11 @@ Let's dump some of the task's properties using Powershell to find out.
 
 what account the task runs as:
 
-![](media_pe/6ec8cf33c9bae8caf2b85144b10e9bdb.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/6ec8cf33c9bae8caf2b85144b10e9bdb.png)
 
 what to run:
 
-![](media_pe/4a023ea9b74ffc041161e43066ae4693.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/4a023ea9b74ffc041161e43066ae4693.png)
 
 In the Principal property we can see the Group to run as is Authenticated Users
 which really means it will run as the logged on user starting the task. We also
@@ -978,13 +978,13 @@ windir /f && REM "
 
 schtasks /Run /TN \\Microsoft\\Windows\\DiskCleanup\\SilentCleanup /I
 
-![](media_pe/524a89d0df75e70d39b677569b26e383.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/524a89d0df75e70d39b677569b26e383.png)
 
-![](media_pe/33ee6acf661c0230d39a2d0a357fd42a.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/33ee6acf661c0230d39a2d0a357fd42a.png)
 
-![](media_pe/26f5071ee7c81d089979d77294f85c5e.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/26f5071ee7c81d089979d77294f85c5e.png)
 
-![](media_pe/972b8b02a1ea97fc81b8578ef5be9092.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/972b8b02a1ea97fc81b8578ef5be9092.png)
 
 If you want to mitigate now you should be able to reconfigure the task to not
 use environment variables using the following Powershell script run as
@@ -1008,7 +1008,7 @@ so the rest are not exploitable.
 "Limited" -and \$_.Principal.LogonType -ne "ServiceAccount" -and \$_.State -ne
 "Disabled" -and \$_.Actions[0].CimClass.CimClassName -eq "MSFT_TaskExecAction" }
 
-![](media_pe/777075a2f47ae95fa34e9651260abe64.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/777075a2f47ae95fa34e9651260abe64.png)
 
 **Yet another sdclt UAC bypass(已复现):**
 
@@ -1020,7 +1020,7 @@ local admin with the usual UAC window. If the user running with medium
 privileges can make these process load a dll or execute a command, UAC bypass is
 performed.
 
-![](media_pe/b2f5047fe05558dd252a6ae8c69476b2.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/b2f5047fe05558dd252a6ae8c69476b2.png)
 
 The method I found is fileless and is based on COM hijacking.
 
@@ -1033,7 +1033,7 @@ The high privilege sdclt process calls C:\\Windows\\System32\\control.exe
 
 Control.exe process runs with high privilege and ....
 
-![](media_pe/56210c7a6a6fe7f8624af7ac35dc47bb.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/56210c7a6a6fe7f8624af7ac35dc47bb.png)
 
 Using Sysinternals Procmon, we can see that control.exe is failing to find an
 open command for the "folder" object in the current user registry (HKCU).
@@ -1057,13 +1057,13 @@ HKCU\\Software\\Classes\\Folder\\shell\\open\\command /v "DelegateExecute" /f
 
 %windir%\\system32\\sdclt.exe
 
-![](media_pe/2ce4785a14fc08f963c613fbc2132aa4.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/2ce4785a14fc08f963c613fbc2132aa4.png)
 
-![](media_pe/bbe8db4f47e51448d4aca83f6e9c7bf0.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/bbe8db4f47e51448d4aca83f6e9c7bf0.png)
 
 reg delete "HKCU\\Software\\Classes\\Folder\\shell\\open\\command" /f
 
-![](media_pe/a26a80ef00360a441e083c79ba9adab6.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/a26a80ef00360a441e083c79ba9adab6.png)
 
 **Mocking Trusted Directory bypass windows 10 UAC(已复现):**
 
@@ -1173,13 +1173,13 @@ WINMM.dll (imported by winSAT.exe) in its current directory “C:\\Windows
 
 os info:
 
-![](media_pe/044c921a6d0de95e202c2c384b43307d.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/044c921a6d0de95e202c2c384b43307d.png)
 
 hj.dll:
 
-![](media_pe/63091f9a9d85a3db8b979c03c18b44c1.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/63091f9a9d85a3db8b979c03c18b44c1.png)
 
-![](media_pe/4c731fafd4d866c09001f9f1052c7494.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/4c731fafd4d866c09001f9f1052c7494.png)
 
 所需文件:
 
@@ -1191,45 +1191,45 @@ https://www.pconlife.com/dfiles/20200219/00626c6902647063de738a59a9f767c6/dumpbi
 
 https://raw.githubusercontent.com/michaellandi/exportstoc/master/ExportsToC%2B%2B/bin/Release/ExportsToC%2B%2B.exe
 
-![](media_pe/f392d65fc683c4a4b505ac0131b5568e.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/f392d65fc683c4a4b505ac0131b5568e.png)
 
-![](media_pe/25063cbbfb03c57b3c4d208ed156e366.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/25063cbbfb03c57b3c4d208ed156e366.png)
 
-![C:\\Users\\lirui\\AppData\\Local\\Temp\\WeChat Files\\1b67bbd24683c9518f2d75f23ce65ea.png](media_pe/9b5dfadeb9fc7ba9dac738608b588f86.png)
+![C:\\Users\\lirui\\AppData\\Local\\Temp\\WeChat Files\\1b67bbd24683c9518f2d75f23ce65ea.png](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/9b5dfadeb9fc7ba9dac738608b588f86.png)
 
 http://wangshuo.jb51.net:81/201808/tools/vc6_cn_full_jb51.rar
 
-![](media_pe/f72c2b09b0acce7b351591bd4e55bcac.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/f72c2b09b0acce7b351591bd4e55bcac.png)
 
-![](media_pe/52411744eae59cf156e3373ee4994abf.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/52411744eae59cf156e3373ee4994abf.png)
 
 执行后依然无法弹回shell
 
 使用https://github.com/secretsquirrel/the-backdoor-factory:
 
-![](media_pe/b133000ba7d59242cd0f6030c718c32e.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/b133000ba7d59242cd0f6030c718c32e.png)
 
-![](media_pe/73bbf325da0adc563a24352866682c45.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/73bbf325da0adc563a24352866682c45.png)
 
-![](media_pe/959323b3f7bc32b803f9407cb16e0b04.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/959323b3f7bc32b803f9407cb16e0b04.png)
 
-![](media_pe/dcbe4f187587cd049863dbc1fe3f908c.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/dcbe4f187587cd049863dbc1fe3f908c.png)
 
-![](media_pe/e406aceaeb04d125db3dc15a9fed8028.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/e406aceaeb04d125db3dc15a9fed8028.png)
 
 成功弹回已BypassUAC的shell，点击OK后shell正常，关闭WinSAT.exe后shell也会关闭
 
-![](media_pe/bf46917f83312c4d4055aca4eb2f34c2.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/bf46917f83312c4d4055aca4eb2f34c2.png)
 
-![](media_pe/198b89f3605f842e2a7d07e2905660fb.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/198b89f3605f842e2a7d07e2905660fb.png)
 
 ComputerDefaults.exe利用
 
-![](media_pe/00b7a15b903e83c365a920d7c407fa46.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/00b7a15b903e83c365a920d7c407fa46.png)
 
 C:\\Windows\\System32下有60个AutoElevate为true的二进制文件，总共有13个二进制文件可用于通过模拟可信目录进行劫持DLL
 
-![](media_pe/ec01fca86d4d763c4d59f763ae3edbfd.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/ec01fca86d4d763c4d59f763ae3edbfd.png)
 
 **bypass UAC in newer Windows versions through cmstp.exe(已复现):**
 
@@ -1257,7 +1257,7 @@ command whoami /priv and see if all privileges are available.
 When you start something “As Administrator”, and run whoami /priv, you will find
 out that there is a lot more.
 
-![](media_pe/dc7de038c1ebdc1f47048f6074eac8ef.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/dc7de038c1ebdc1f47048f6074eac8ef.png)
 
 the amazing research of Oddvar Moe about exploiting microsoft “cmstp.exe” as a
 way to bypass UAC.
@@ -1453,7 +1453,7 @@ return WindowHandle;
 
 }
 
-![](media_pe/014568fc0ce7ff8127353d55c3f081e7.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/014568fc0ce7ff8127353d55c3f081e7.png)
 
 To compile it, use the following syntax, in a PowerShell shell that is in the
 same directory as this source.
@@ -1462,13 +1462,13 @@ Add-Type -TypeDefinition ([IO.File]::ReadAllText("\$pwd\\Source.cs"))
 -ReferencedAssemblies "System.Windows.Forms" -OutputAssembly
 "CMSTP-UAC-Bypass.dll"
 
-![](media_pe/3be51f317d4bf33dc377aa964666ab23.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/3be51f317d4bf33dc377aa964666ab23.png)
 
 [Reflection.Assembly]::Load([IO.File]::ReadAllBytes("\$pwd\\CMSTP-UAC-Bypass.dll"))
 
 [CMSTPBypass]::Execute("C:\\Windows\\System32\\cmd.exe")
 
-![](media_pe/22d43c26af234233f5b32f29b0fdb7d4.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/22d43c26af234233f5b32f29b0fdb7d4.png)
 
 Weaponizing with PowerShell
 
@@ -1500,25 +1500,25 @@ if(-not ([System.Management.Automation.PSTypeName]'CMSTPBypass').Type)
 
 }
 
-![](media_pe/970e5ed09a8c1877fc29b8223fd32c54.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/970e5ed09a8c1877fc29b8223fd32c54.png)
 
-![](media_pe/469493db76e3f34bb02cc1022be1ec15.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/469493db76e3f34bb02cc1022be1ec15.png)
 
-![](media_pe/dfcf839873c9a67b8fafc683694186ee.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/dfcf839873c9a67b8fafc683694186ee.png)
 
 **UAC-TokenMagic.ps1 Bypass UAC(已复现):**
 
 https://github.com/FuzzySecurity/PowerShell-Suite/blob/master/UAC-TokenMagic.ps1
 
-![](media_pe/a2a8d252ea0a8e02cf3a2c7742565ad5.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/a2a8d252ea0a8e02cf3a2c7742565ad5.png)
 
-![](media_pe/361fc4c345926917509aef63dcb336c7.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/361fc4c345926917509aef63dcb336c7.png)
 
-![](media_pe/9413685511485e3cff32d0d4a0ca14be.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/9413685511485e3cff32d0d4a0ca14be.png)
 
 SOMETHING WEIRD:
 
-![](media_pe/671029fa27423140327f788ba5e6f479.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/671029fa27423140327f788ba5e6f479.png)
 
 **ctfmon windows vulnerabilities(已复现):**
 
@@ -1578,31 +1578,31 @@ boundaries for nearly twenty years, and nobody noticed."
 
 实验:
 
-![](media_pe/60cceb9c45e490eb4cb912306e345d19.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/60cceb9c45e490eb4cb912306e345d19.png)
 
-![](media_pe/4a117ff41b7d80864aa42e664328c4b2.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/4a117ff41b7d80864aa42e664328c4b2.png)
 
-![](media_pe/d8b52396185ff73642da66656bac7756.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/d8b52396185ff73642da66656bac7756.png)
 
 \#1):
 
-![](media_pe/25719ab66c06358944e6a64b169730ba.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/25719ab66c06358944e6a64b169730ba.png)
 
-![](media_pe/bbf42c89e88a09816cf956867c7a52ee.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/bbf42c89e88a09816cf956867c7a52ee.png)
 
-![](media_pe/56d797c542a890b5cf8d6bbfe1f36a47.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/56d797c542a890b5cf8d6bbfe1f36a47.png)
 
 \#2):
 
-![](media_pe/49b20b9be5e9cc5fbe904d324802e33f.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/49b20b9be5e9cc5fbe904d324802e33f.png)
 
-![](media_pe/cd324d7c42791bd73a5058a6ff3afefd.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/cd324d7c42791bd73a5058a6ff3afefd.png)
 
-![](media_pe/c2b4d37b8ef9f67235c61e1bfe9f47a8.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/c2b4d37b8ef9f67235c61e1bfe9f47a8.png)
 
 补丁:
 
-![](media_pe/fc1fbdbcdf0e55d00a655e981e4baa93.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/fc1fbdbcdf0e55d00a655e981e4baa93.png)
 
 If exploited, the weakness in CTF protocol could allow attackers to easily
 bypass User Interface Privilege Isolation (UIPI), letting even an unprivileged
@@ -1643,15 +1643,15 @@ https://demonsec666.oss-cn-qingdao.aliyuncs.com/%E9%9C%80%E8%BF%87UAC-getsystem.
 
 2.Tokenvator.exe getsystem cmd.exe
 
-![](media_pe/6b7930804722205d431a49298f714ff8.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/6b7930804722205d431a49298f714ff8.png)
 
 3.incognito.exe execute -c "NT AUTHORITY\\SYSTEM" cmd.exe
 
-![](media_pe/02cf32c1adda5418b709d76d131e4be6.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/02cf32c1adda5418b709d76d131e4be6.png)
 
 4.psexec -s -i cmd.exe
 
-![](media_pe/564cb3b3466e9bcca9f3c62c3f9a9b35.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/564cb3b3466e9bcca9f3c62c3f9a9b35.png)
 
 5.python getsystem.py
 
@@ -1739,9 +1739,9 @@ Write-Host "[+] Cleaning up registry entry"
 
 }
 
-![](media_pe/189f5e95e928d7eb7a0deb334365eb25.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/189f5e95e928d7eb7a0deb334365eb25.png)
 
-![](media_pe/0ca2a9c8b817e4797b274bd9ee5611d6.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/0ca2a9c8b817e4797b274bd9ee5611d6.png)
 
 **\#4). Windows内核漏洞利用:**
 
@@ -1749,7 +1749,7 @@ Write-Host "[+] Cleaning up registry entry"
 
 cmd枚举已安装补丁并找出与提权相关缺失的补丁:
 
-![](media_pe/bd11a4e7d5436d79373387f18c2a835a.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/bd11a4e7d5436d79373387f18c2a835a.png)
 
 wmic qfe get Caption,Description,HotFixID,InstalledOn \| findstr /C:"KB3136041"
 /C:"KB4018483"
@@ -1760,19 +1760,19 @@ wmic qfe get Caption,Description,HotFixID,InstalledOn \| findstr /C:"KB3136041"
 
 post/windows/gather/enum_patches
 
-![](media_pe/4832c1cc0a02ae927b89fed154b8cd07.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/4832c1cc0a02ae927b89fed154b8cd07.png)
 
 2.通过Windows Exploit Suggester工具识别
 
 https://github.com/AonCyberLabs/Windows-Exploit-Suggester
 
-![](media_pe/805d53e4b5e0d691f2c5340254bb6665.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/805d53e4b5e0d691f2c5340254bb6665.png)
 
 3.通过powershell脚本识别
 
 https://github.com/rasta-mouse/Sherlock
 
-![](media_pe/cbc2878f2ea0afe2594e2fd5dde7b2a2.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/cbc2878f2ea0afe2594e2fd5dde7b2a2.png)
 
 4.通过漏洞编号搜索EXP:
 
@@ -1819,7 +1819,7 @@ https://github.com/gentilkiwi/mimikatz/releases
 
 https://www.pconlife.com/dfiles/20200228/74c8602b526646ff3a122f712c73f58e/getpass.exe
 
-![](media_pe/751cbd5fad4d389613c2196d87762a68.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/751cbd5fad4d389613c2196d87762a68.png)
 
 **IIS6提权工具(MS09-020):**
 
@@ -1831,13 +1831,13 @@ https://www.7kb.org/wp-content/uploads/2015/11/MS09-020KB970483-CVE-2009-1535-II
 
 上传webshell:
 
-![](media_pe/436dadddf9c8577852ce5c9175e6b5cb.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/436dadddf9c8577852ce5c9175e6b5cb.png)
 
-![](media_pe/63287c71b9269870b2b661ee72146c7e.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/63287c71b9269870b2b661ee72146c7e.png)
 
-![](media_pe/5004a82fb2b2822b87e87626719990ad.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/5004a82fb2b2822b87e87626719990ad.png)
 
-![](media_pe/58a930e74a0b0bbb59fbe4d594da66ae.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/58a930e74a0b0bbb59fbe4d594da66ae.png)
 
 **ms11-080提权:**
 
@@ -1847,9 +1847,9 @@ https://raw.githubusercontent.com/SecWiki/windows-kernel-exploits/master/MS11-08
 
 补丁号: KB2592799 CVE-2011-2005
 
-![](media_pe/18e4820fffce1fca8be82e90bb8784b5.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/18e4820fffce1fca8be82e90bb8784b5.png)
 
-![](media_pe/c3216d190d13d2d0a45493156a4e4b12.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/c3216d190d13d2d0a45493156a4e4b12.png)
 
 **PR提权(MS09-012):**
 
@@ -1859,7 +1859,7 @@ https://www.pconlife.com/dfiles/20200228/3db554e6146e47bb88cf6bf0730bbb1f/pr.exe
 
 补丁号:KB952004 CVE-2009-0079
 
-![](media_pe/b8263e4548691621d620af60c39d6961.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/b8263e4548691621d620af60c39d6961.png)
 
 **巴西烤肉提权(MS09-012):**
 
@@ -1869,9 +1869,9 @@ https://raw.githubusercontent.com/Re4son/Churrasco/master/churrasco.exe
 
 补丁号: KB956572 CVE-2009-0078
 
-![](media_pe/43440f5ef3fb44716dd986e51afd2653.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/43440f5ef3fb44716dd986e51afd2653.png)
 
-![](media_pe/105414cce55bf6bb1b56d29899e2e671.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/105414cce55bf6bb1b56d29899e2e671.png)
 
 **DLL注入:**
 
@@ -1902,7 +1902,7 @@ Manual Method
 It should be noted that a 64-bit payload should be used if the process that the
 DLL will be injected is 64-bit.
 
-![](media_pe/96fef0d0e3e7281fc0d0156620f127e4.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/96fef0d0e3e7281fc0d0156620f127e4.png)
 
 There are various tools that can perform DLL injection but one of the most
 reliable is the Remote DLL Injector from SecurityXploded team which is using the
@@ -1912,19 +1912,19 @@ that the tool needs:
 
 https://cdn.securityxploded.com/download/RemoteDLLInjector.zip
 
-![](media_pe/5f90ced5ffa29f59ce672a6f01449683.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/5f90ced5ffa29f59ce672a6f01449683.png)
 
-![](media_pe/1dbfebcd4b54c7a08cd5b25e9f125ca2.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/1dbfebcd4b54c7a08cd5b25e9f125ca2.png)
 
 Metasploit
 
-![](media_pe/923f4da3ac7e2127789695126e3c30fd.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/923f4da3ac7e2127789695126e3c30fd.png)
 
 PowerSploit
 
-![](media_pe/54fd2a7abcda8fd815bd996178b57b4f.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/54fd2a7abcda8fd815bd996178b57b4f.png)
 
-![](media_pe/de4da452f2545320cc4bffefe1914374.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/de4da452f2545320cc4bffefe1914374.png)
 
 ASLR(地址空间配置随机化)
 
@@ -1989,16 +1989,16 @@ https://docs.microsoft.com/zh-cn/sysinternals/downloads/accesschk
 The command below will list all the services that the user “webserver” can
 modify.
 
-![](media_pe/71565bcdcea806b9b61b5b393d67e2a4.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/71565bcdcea806b9b61b5b393d67e2a4.png)
 
-![](media_pe/9a7f7feffb74bc15c509704e8a573b51.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/9a7f7feffb74bc15c509704e8a573b51.png)
 
 Service All Access means that the user has full control over this service and
 therefore it is possible the properties of this service to be modified. The next
 step is to determine the status of this service, the binary path name and if the
 service with higher privileges.
 
-![](media_pe/168690b2c09008b82b5e09223be1fc07.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/168690b2c09008b82b5e09223be1fc07.png)
 
 Since the nxlog service is running as Local System this means that the
 BINARY_PATH_NAME parameter can be modified to execute any command on the system.
@@ -2006,7 +2006,7 @@ The path of the service binary will be changed in order to add the “pentestlab
 user to the local administrators group the next time that the service will
 restart and therefore to escalate our privileges via this method.
 
-![](media_pe/1cd9278cfbf3a3e1e240df9102cbbde8.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/1cd9278cfbf3a3e1e240df9102cbbde8.png)
 
 Restarting the service will cause the nxlog service to fail as the binary path
 would not point into the actual executable of the service.
@@ -2014,7 +2014,7 @@ would not point into the actual executable of the service.
 However the command will be executed successfully and the user “webserver” will
 be added to the local administrators group.
 
-![](media_pe/cd8c6a3942bf11a4b720b4b4bdeb4c1a.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/cd8c6a3942bf11a4b720b4b4bdeb4c1a.png)
 
 Metasploit
 
@@ -2027,7 +2027,7 @@ reconfigure the binary path of the service to point into the payload and not in
 the original executable and finally will attempt to restart the service in order
 for the payload to be executed as SYSTEM.
 
-![](media_pe/e3d7281f299012f6ee6d4528957f89e3.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/e3d7281f299012f6ee6d4528957f89e3.png)
 
 PowerSploit
 
@@ -2041,18 +2041,18 @@ Binary Path
 The Get-ServiceDetail module will list some basic information about the service
 like the process ID and the state.
 
-![](media_pe/a5c2426ee94b2421a7c497495e982971.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/a5c2426ee94b2421a7c497495e982971.png)
 
 This module will list all the services that the user can modify the binary path
 and also will determine if the user can restart the service.
 
-![](media_pe/955e4d34627a70e8ccb9c34037717dbc.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/955e4d34627a70e8ccb9c34037717dbc.png)
 
 The module Invoke-ServiceAbuse will automatically modify the binary path and
 restart the service in order to add the user john into the local administrators
 group.
 
-![](media_pe/a68c62af9880fd1b8597b97f54cac545.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/a68c62af9880fd1b8597b97f54cac545.png)
 
 Replacing the Service Binary
 
@@ -2064,7 +2064,7 @@ privileges.
 The full list of permissions for the services running on the system can be
 obtained through the module Get-ModifiableServiceFile.
 
-![](media_pe/e22625e69efc83ade68138f131ef7dfa.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/e22625e69efc83ade68138f131ef7dfa.png)
 
 From the image above the following conditions exist:
 
@@ -2073,23 +2073,23 @@ From the image above the following conditions exist:
 >   Standard users have permissions to modify the file of where the binary is
 >   stored
 
-![](media_pe/7ca3e90dbea90fb7babd5f476ca3e44b.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/7ca3e90dbea90fb7babd5f476ca3e44b.png)
 
 This means that the nxlog.exe can be replaced by “normal users”. PowerSploit can
 also create a custom binary that will add a user as local administrator.
 
-![](media_pe/4d14786b3be9bb5aeae3fd528ee847a1.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/4d14786b3be9bb5aeae3fd528ee847a1.png)
 
 It should be noted that the service.exe needs to be renamed to nxlog.exe ,which
 is the original binary that the service will execute, and dropped into the
 binary path. Once the service is restarted the command will be executed and a
 new user will be created on the system with local administrator rights.
 
-![](media_pe/f8f20b40ae227cf89059599db369dedc.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/f8f20b40ae227cf89059599db369dedc.png)
 
-![](media_pe/86e1bc3114ba6622a22fe35a7ecbe6d4.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/86e1bc3114ba6622a22fe35a7ecbe6d4.png)
 
-![](media_pe/46f7c5334ca01598ace89914cb34e499.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/46f7c5334ca01598ace89914cb34e499.png)
 
 若执行成功，会添加一个本地管理员账户john Password123!
 
@@ -2113,11 +2113,11 @@ DLL全称dynamic-link
 library，即动态链接库，是一个包含可以由多个程序同时使用的代码和数据的库。比如，windows操作系统中的Comdlg32.dll
 包含常见的对话框相关导出函数，当我们在程序中加载该DLL后，就能使用该DLL中的函数来实现“打开”对话框。
 
-![](media_pe/b084a839508ec1b1d3ea92246b3c34d9.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/b084a839508ec1b1d3ea92246b3c34d9.png)
 
 函数转发的DLL劫持方式:
 
-![](media_pe/a8102dd39fa4a4bb9e57cc7a01b609c7.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/a8102dd39fa4a4bb9e57cc7a01b609c7.png)
 
 原始dll1.dll
 
@@ -2246,7 +2246,7 @@ return 0;
 
 劫持dll2.dll:
 
-![](media_pe/0a0dd3a78325be8643d486577a4fb0fb.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/0a0dd3a78325be8643d486577a4fb0fb.png)
 
 dllmain.cpp:
 
@@ -2507,21 +2507,21 @@ framework.h:
 
 劫持前:
 
-![](media_pe/19528c2a1f4ceb7cf30871843369c714.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/19528c2a1f4ceb7cf30871843369c714.png)
 
-![](media_pe/aaf667eb4bd2f4d2aa2fa30050c5f376.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/aaf667eb4bd2f4d2aa2fa30050c5f376.png)
 
 劫持后:
 
-![](media_pe/51db846e541a76613f19c930e6f0f466.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/51db846e541a76613f19c930e6f0f466.png)
 
-![](media_pe/9166518be8229cbfc363c9d1b995f8bf.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/9166518be8229cbfc363c9d1b995f8bf.png)
 
-![](media_pe/254dddb9b2d35466755ffc234d2c4613.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/254dddb9b2d35466755ffc234d2c4613.png)
 
 直接将恶意代码写入到正常DLL中:
 
-![](media_pe/9cabe7bd412738ebb491f0cef72d933e.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/9cabe7bd412738ebb491f0cef72d933e.png)
 
 https://github.com/secretsquirrel/the-backdoor-factory
 
@@ -2669,12 +2669,12 @@ filters below:
 
 https://download.sysinternals.com/files/ProcessMonitor.zip
 
-![](media_pe/b0bd6202ae5c2926a7326fcbbe54ab59.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/b0bd6202ae5c2926a7326fcbbe54ab59.png)
 
 Process Monitor will identify if there is any DLL that the application tries to
 load and the actual path that the application is looking for the missing DLL.
 
-![](media_pe/fa8af242ab82a8c85ef1b74a5ebac3ef.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/fa8af242ab82a8c85ef1b74a5ebac3ef.png)
 
 In this example the process xxx.exe is missing several DLL files which possibly
 can be used for privilege escalation.
@@ -2688,11 +2688,11 @@ to Path variable. This give the opportunity of privilege escalation since the
 user can write a malicious DLL in that directory which is going to be loaded the
 next time that the process will restart with the permission of that process.
 
-![](media_pe/8b31e718088b1a9a98cb9a0cb6c9c40d.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/8b31e718088b1a9a98cb9a0cb6c9c40d.png)
 
 Step 3 – DLL Hijacking
 
-![](media_pe/f5457d744674fac86b490d1472153419.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/f5457d744674fac86b490d1472153419.png)
 
 As it has been identified above the process is missing the Riched32.dll so the
 hijack.dll needs to be renamed as Riched32.dll. This will confuse the
@@ -2700,7 +2700,7 @@ application and it will try to load it as the application will think that this
 is a legitimate DLL. This malicious DLL needs to be dropped in one of the
 folders that windows are loading DLL files.
 
-![](media_pe/8bfd1c84593cadc0a216b8795ee261ea.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/8bfd1c84593cadc0a216b8795ee261ea.png)
 
 As it can be see below when the service restarted a Meterpreter session opened
 with SYSTEM privileges through DLL hijacking.
@@ -2713,27 +2713,27 @@ with SYSTEM privileges through DLL hijacking.
 
 当尝试替换成WINSTA.dll时，虽然Bginfo64执行中存在问题，但是恶意dll会被执行并弹回shell，关闭Bginfo64问题提示后，shell依然正常运行。
 
-![](media_pe/78b9114cf1c293d4296cc571c17fdf0b.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/78b9114cf1c293d4296cc571c17fdf0b.png)
 
-![](media_pe/43bf26d739c9e03ac81b90fe7d09c5e0.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/43bf26d739c9e03ac81b90fe7d09c5e0.png)
 
 在使用dnu身份登录的情况下，反弹回lirui身份的shell，则该shell一定已BypassUAC
 
-![](media_pe/0b1fed6dc2c71b48807e38c14667b57f.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/0b1fed6dc2c71b48807e38c14667b57f.png)
 
-![](media_pe/cdebe7779f42f381490d7c58ba853b6f.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/cdebe7779f42f381490d7c58ba853b6f.png)
 
 点击关闭程序按钮后，会话依然正常
 
-![](media_pe/879148251880b643cda5eb4bc8d0da53.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/879148251880b643cda5eb4bc8d0da53.png)
 
 发现目标主机上新开启了一个进程(即反弹的shell)
 
-![](media_pe/9ad69286bfb1999124ecbfd3a7785b52.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/9ad69286bfb1999124ecbfd3a7785b52.png)
 
 研究发现WINSTA.dll主要作用是控制显示在桌面上的配置信息
 
-![](media_pe/ce20259b44761aa09ff8519db5bc67ae.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/ce20259b44761aa09ff8519db5bc67ae.png)
 
 PowerSploit
 
@@ -2745,20 +2745,20 @@ and generation of DLL’s.
 The module Find-ProcessDLLHijack will identify all the processes on the system
 that are trying to load DLL’s which are missing.
 
-![](media_pe/24c341e40192cbdbb912588111528d62.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/24c341e40192cbdbb912588111528d62.png)
 
 The next step is the identification of paths that the user can modify the
 content. The folders identified will be the ones that the malicious .DLL needs
 to be planted.
 
-![](media_pe/0e928412b69ca15f3c8b33ad671252b6.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/0e928412b69ca15f3c8b33ad671252b6.png)
 
 The last step is to generate the hijackable DLL into one of the folders that
 have been identified above with Modify (M) permissions.
 
-![](media_pe/7adb61c136c7601e9e057f064fd438e5.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/7adb61c136c7601e9e057f064fd438e5.png)
 
-![](media_pe/a3068f07bbfe88eb77cf1bc62a716dd4.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/a3068f07bbfe88eb77cf1bc62a716dd4.png)
 
 Discovering applications that are not installed in the Program files it is
 something common as except of third-party applications that are not forced to be
@@ -2882,7 +2882,7 @@ https://github.com/foxglovesec/Potato
 
 win7:
 
-![](media_pe/20e57540508ba383115992b4d3325b0b.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/20e57540508ba383115992b4d3325b0b.png)
 
 Windows Server 2008:
 
@@ -2926,35 +2926,35 @@ proxy显示当前winhttp代理设置为直连(没有代理服务器)，但是更
 
 Metasploit
 
-![](media_pe/d17646d510ac113b2adba81a554768ca.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/d17646d510ac113b2adba81a554768ca.png)
 
-![](media_pe/970c3377060ddffad1d751b1836aecc7.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/970c3377060ddffad1d751b1836aecc7.png)
 
-![](media_pe/5904e4c76e0618d4cfbd3fa1aa35a8b5.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/5904e4c76e0618d4cfbd3fa1aa35a8b5.png)
 
-![](media_pe/990bcb67ed651bb77c8197f573bf568e.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/990bcb67ed651bb77c8197f573bf568e.png)
 
-![](media_pe/19cacc689eef9c6d2df9b25299bf54c0.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/19cacc689eef9c6d2df9b25299bf54c0.png)
 
 potato通过IE钓鱼administrator用户获取system权限shell:
 
-![](media_pe/934f89cd43626b89a8ac31651597c33f.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/934f89cd43626b89a8ac31651597c33f.png)
 
-![](media_pe/843fc99b5eab9e68d9109fba4f583495.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/843fc99b5eab9e68d9109fba4f583495.png)
 
-![](media_pe/0e062ac0d544f6cd5bdb78c48161e370.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/0e062ac0d544f6cd5bdb78c48161e370.png)
 
-![](media_pe/a21fd614a1644e406b6815cc731d12c3.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/a21fd614a1644e406b6815cc731d12c3.png)
 
-![](media_pe/5ee64395127e642e73587821d9db8ce0.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/5ee64395127e642e73587821d9db8ce0.png)
 
-![](media_pe/df2ce5847b23d5e6b6ab220522039ad0.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/df2ce5847b23d5e6b6ab220522039ad0.png)
 
-![](media_pe/3c86bc01f240d32ca1879119cc153d5f.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/3c86bc01f240d32ca1879119cc153d5f.png)
 
 关闭浏览器并关闭shell channel后，meterpreter会话依然正常
 
-![](media_pe/c59a3a5efdd24f3823759e7ca1d4caa4.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/c59a3a5efdd24f3823759e7ca1d4caa4.png)
 
 PowerShell
 
@@ -2972,11 +2972,11 @@ methods to perform privilege escalation.
 
 win7:
 
-![](media_pe/e5b7805ee75a3d866f0f662dd2afe28f.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/e5b7805ee75a3d866f0f662dd2afe28f.png)
 
-![](media_pe/b61510c482c54346dbb9f72a07d20d8e.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/b61510c482c54346dbb9f72a07d20d8e.png)
 
-![](media_pe/158f2c39c532ccc1458f552dd6cb7c5b.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/158f2c39c532ccc1458f552dd6cb7c5b.png)
 
 win10(WebClient Service + Scheduled Task):
 
@@ -3128,11 +3128,11 @@ Write-Host \$a.CLSID
 
 实验:
 
-![](media_pe/537ba7f8f48dc92d7274bc15b57d78b0.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/537ba7f8f48dc92d7274bc15b57d78b0.png)
 
-![](media_pe/bbe1aa4867ab3fbc79eaceb655b10e25.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/bbe1aa4867ab3fbc79eaceb655b10e25.png)
 
-![](media_pe/088966a5076fced3eff5fca49566fd80.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/088966a5076fced3eff5fca49566fd80.png)
 
 1.权限检查:
 
@@ -3144,7 +3144,7 @@ Write-Host \$a.CLSID
 
 如果均未开启，那么无法提权
 
-![](media_pe/b9c687f3398592e5602921e7c8ee70c7.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/b9c687f3398592e5602921e7c8ee70c7.png)
 
 2. 查看RPC默认端口是否为135
 
@@ -3170,7 +3170,7 @@ https://github.com/3gstudent/Use-COM-objects-to-bypass-UAC/blob/master/DisableFi
 
 https://github.com/ohpe/juicy-potato/blob/master/CLSID/README.md
 
-![](media_pe/5cfe1fe7c5dbc4005f47ea5d5d5eadca.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/5cfe1fe7c5dbc4005f47ea5d5d5eadca.png)
 
 4.选择一个系统未占用的端口作为监听
 
@@ -3179,18 +3179,18 @@ https://github.com/ohpe/juicy-potato/blob/master/CLSID/README.md
 JuicyPotato.exe -t \* -p c:\\\\windows\\\\system32\\\\cmd.exe -l 1111 -c
 {8BC3F05E-D86B-11D0-A075-00C04FB68820}
 
-![](media_pe/7d798b3029cdc3fabc919d3f5ba11810.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/7d798b3029cdc3fabc919d3f5ba11810.png)
 
 JuicyPotato.exe -t \* -p c:\\\\inetpub\\\\wwwroot\\\\juicymsf.exe -l 1111 -c
 {8BC3F05E-D86B-11D0-A075-00C04FB68820}
 
-![](media_pe/1fc4591c804f37d29851201e47fd46e0.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/1fc4591c804f37d29851201e47fd46e0.png)
 
 **PrimaryTokenTheft.cpp:**
 
 Steal a primary token and spawn cmd.exe using the stolen token.
 
-![](media_pe/9b353d4a5be27ab8176af86db4f1a05e.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/9b353d4a5be27ab8176af86db4f1a05e.png)
 
 \#include "pch.h"
 
@@ -3495,9 +3495,9 @@ Write-Output "We are: \$([Environment]::Username)"
 
 }
 
-![](media_pe/342d90fb8f96e849f63dfe3ffd07a300.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/342d90fb8f96e849f63dfe3ffd07a300.png)
 
-![](media_pe/b3f322a1e93a6adf9ea859de8f43a3b0.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/b3f322a1e93a6adf9ea859de8f43a3b0.png)
 
 **ALPC exploit:**
 
@@ -3509,21 +3509,21 @@ disclosed by Sandbox Escaper.
 
 Attempts to clean up itself after loading the DLL.
 
-![](media_pe/bb598dd666a480623ed7cae5644f0545.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/bb598dd666a480623ed7cae5644f0545.png)
 
-![](media_pe/5deb4c00fbcd077109d662a29552acc3.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/5deb4c00fbcd077109d662a29552acc3.png)
 
-![](media_pe/1741ccc84de334745acc741226e1da96.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/1741ccc84de334745acc741226e1da96.png)
 
-![](media_pe/b5db5b1daaf648e29a4bf1da546fd451.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/b5db5b1daaf648e29a4bf1da546fd451.png)
 
 探索原因:
 
-![](media_pe/e84fe9d98165a08822d8e60bc160f889.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/e84fe9d98165a08822d8e60bc160f889.png)
 
-![](media_pe/b911a928cc70b8e8928c5283c426cf46.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/b911a928cc70b8e8928c5283c426cf46.png)
 
-![](media_pe/c8d9826a476a137dab31ec1225a3d5c2.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/c8d9826a476a137dab31ec1225a3d5c2.png)
 
 **ATT&CK: Privilege Escalation-6).unquoted service path**
 
@@ -3542,14 +3542,14 @@ Method 1 – Manual Exploitation
 The first step is to try and discover all the services that are running on the
 target host and identify those that are not enclosed inside quotes.
 
-![](media_pe/e5fdfa04c89c4eea139c01e80673c254.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/e5fdfa04c89c4eea139c01e80673c254.png)
 
-![](media_pe/ff5423c8da8ce8521136e050bd572f47.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/ff5423c8da8ce8521136e050bd572f47.png)
 
 The next step is to try to identify the level of privilege that this service is
 running. This can be identified easily:
 
-![](media_pe/67731597311c76e79aaab698fd622b47.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/67731597311c76e79aaab698fd622b47.png)
 
 Since the service is running as SYSTEM and is not enclosed in quote tags the
 final check is to determine if standard users have “Write” access in the
@@ -3558,7 +3558,7 @@ or C:\\Program Files (x86)\\. Folder permissions can be identified with the use
 of a Windows built-in tool called icacls (Integrity Control Access Control
 Lists):
 
-![](media_pe/0725c792369517f3b21f94a070d38b09.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/0725c792369517f3b21f94a070d38b09.png)
 
 The users in the Lenovo folder have the ability to write content which means
 that it is possible to generate a malicious binary and plant this executable
@@ -3569,29 +3569,29 @@ to the user.
 Metasploit can be used in order to generate the binary that needs to be dropped
 into the target system.
 
-![](media_pe/22b7157e686c76aee6546b657432026d.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/22b7157e686c76aee6546b657432026d.png)
 
-![](media_pe/a44808aa4b52bd554e8bb1aa8a7a4755.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/a44808aa4b52bd554e8bb1aa8a7a4755.png)
 
-![](media_pe/051b85e9d2283322f3eb8c43f627e8be.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/051b85e9d2283322f3eb8c43f627e8be.png)
 
 情况一:
 
-![](media_pe/1225a97bb44117c42b3586566fcb1bb1.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/1225a97bb44117c42b3586566fcb1bb1.png)
 
-![](media_pe/f303b56ae99991299ec1815a7d7d2a5e.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/f303b56ae99991299ec1815a7d7d2a5e.png)
 
 情况二:
 
-![](media_pe/c0d15e4b27f6540d4020655121d128c4.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/c0d15e4b27f6540d4020655121d128c4.png)
 
 meterpreter会话存在30s后死掉
 
-![](media_pe/c86c802ce894ec2c8bc2173a38cf384f.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/c86c802ce894ec2c8bc2173a38cf384f.png)
 
 应对措施
 
-![](media_pe/e4ad7a140a51d9ad3799acabf0449fb3.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/e4ad7a140a51d9ad3799acabf0449fb3.png)
 
 Method 2 – Metasploit
 
@@ -3603,9 +3603,9 @@ binary as soon as the payload is executed and a session is created.
 In order to be able to use this module an existing Meterpreter session is
 needed.
 
-![](media_pe/7e41b1b752258c3966c6fa73354c32c5.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/7e41b1b752258c3966c6fa73354c32c5.png)
 
-![](media_pe/39fd3bc068f670b7e36a3ab977eedd5a.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/39fd3bc068f670b7e36a3ab977eedd5a.png)
 
 Method 3 – PowerSploit
 
@@ -3614,7 +3614,7 @@ issue as except of the script that it can identify all the services running on
 the system without quote tags it can also generate a binary that will add a user
 into the local administrator group.
 
-![](media_pe/1a118cb171a977f937f5e4670de0edd3.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/1a118cb171a977f937f5e4670de0edd3.png)
 
 As it can be seen above the Get-ServiceUnquoted script not only discovered the
 service but it does all the other necessary checks as well like: identification
@@ -3628,11 +3628,11 @@ executable into the specified path with a simple payload that it will try to add
 the user “john” into the local administrators group when the service will be
 restarted.
 
-![](media_pe/69d5bb6edefb52c3d39f2e7624ce179f.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/69d5bb6edefb52c3d39f2e7624ce179f.png)
 
-![](media_pe/ad0b56226354dc1ac0d0f29181b40795.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/ad0b56226354dc1ac0d0f29181b40795.png)
 
-![](media_pe/f2bbade9606f4eb9689a82dfa358e1e9.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/f2bbade9606f4eb9689a82dfa358e1e9.png)
 
 总结:
 
@@ -3680,18 +3680,18 @@ applications.
 Computer Configuration\\Administrative Templates\\Windows Components\\Windows
 Installer
 
-![](media_pe/e588b80b0eb30740442b2dbde16bd0c0.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/e588b80b0eb30740442b2dbde16bd0c0.png)
 
 User Configuration\\Administrative Templates\\Windows Components\\Windows
 Installer
 
-![](media_pe/1fff6053e27ebfbfda77e34e5a552491.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/1fff6053e27ebfbfda77e34e5a552491.png)
 
 Identification
 
-![](media_pe/109ad568813e5760ad147a170dbe3988.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/109ad568813e5760ad147a170dbe3988.png)
 
-![](media_pe/88a60c8cea4c0ee75106b99020d90462.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/88a60c8cea4c0ee75106b99020d90462.png)
 
 Privilege Escalation with Metasploit
 
@@ -3701,7 +3701,7 @@ payload that it will be executed as SYSTEM on the target host and it will be
 removed automatically to prevent the installation of being registered with the
 operating system.
 
-![](media_pe/84222719eb74db96b0a213aede54e817.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/84222719eb74db96b0a213aede54e817.png)
 
 Generate MSI Package with PowerSploit
 
@@ -3710,13 +3710,13 @@ exist on the host by checking the registry entries and another one that can
 generate an MSI file that will add a user account into the local administrators
 group.
 
-![](media_pe/20d0e89c40e5a77307f51b47ca4ad8ac.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/20d0e89c40e5a77307f51b47ca4ad8ac.png)
 
-![](media_pe/389c7f5128cafca32ec66ab8acee60ba.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/389c7f5128cafca32ec66ab8acee60ba.png)
 
-![](media_pe/1818406e9a68abfbb7136894c2f300e7.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/1818406e9a68abfbb7136894c2f300e7.png)
 
-![](media_pe/41090a77bdf41ccff3673ba613f32f1a.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/41090a77bdf41ccff3673ba613f32f1a.png)
 
 总结
 
@@ -3745,39 +3745,39 @@ found in the following registry path:
 
 HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services
 
-![](media_pe/402a24efc232c61f2118bf9a1c55b44d.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/402a24efc232c61f2118bf9a1c55b44d.png)
 
 If a standard user has permissions to modify the registry key “ImagePath” which
 contains the path to the application binary then he could escalate privileges to
 system as the service is running under these privileges.
 
-![](media_pe/4ca7f5462c0de1447264772e4d614297.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/4ca7f5462c0de1447264772e4d614297.png)
 
-![](media_pe/980378ebd1b3eb5ed530f3bc68c4897b.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/980378ebd1b3eb5ed530f3bc68c4897b.png)
 
-![](media_pe/dd58d556ac404d55054fb3bcc644524a.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/dd58d556ac404d55054fb3bcc644524a.png)
 
-![](media_pe/f3ffea5a2d284de4f3ca9f1f314a3994.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/f3ffea5a2d284de4f3ca9f1f314a3994.png)
 
-![](media_pe/815d7e81e1ec3637face4a2d9d096092.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/815d7e81e1ec3637face4a2d9d096092.png)
 
-![](media_pe/ac2ec48e732406d532ad7a979944faac.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/ac2ec48e732406d532ad7a979944faac.png)
 
-![](media_pe/3632f3da00f278b934bd51dfaa11ec17.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/3632f3da00f278b934bd51dfaa11ec17.png)
 
 The next time that the service will restart, the custom payload will be executed
 instead of the service binary and it will return back a Meterpreter session as
 SYSTEM.
 
-![](media_pe/e81c946b58eadf0fa2073bf8e14d9fb4.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/e81c946b58eadf0fa2073bf8e14d9fb4.png)
 
 30s后meterpreter会话死掉
 
-![](media_pe/0e631ff48bd1fa0fe5eb27ebbbb17e02.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/0e631ff48bd1fa0fe5eb27ebbbb17e02.png)
 
 应对措施
 
-![](media_pe/1e26cfe7d5553f500d59e5ffe4892dec.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/1e26cfe7d5553f500d59e5ffe4892dec.png)
 
 **ATT&CK: Privilege Escalation-9).Intel SYSRET**
 
@@ -3800,7 +3800,7 @@ tested on Windows 7 SP0/1 (x64) and Windows 2008 R2 SP1 (x64).
 
 Metasploit
 
-![](media_pe/f2b53229aca6aa55d81ad4c0ea1a1be9.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/f2b53229aca6aa55d81ad4c0ea1a1be9.png)
 
 Windows
 
@@ -3810,24 +3810,24 @@ use the following procedure in order to escalate his privileges.
 The first step is to obtain the list of running processes and their associated
 PID’s.
 
-![](media_pe/bc2a8ae5a2730be99f0f50e5c80e65c3.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/bc2a8ae5a2730be99f0f50e5c80e65c3.png)
 
 The explorer.exe is the ideal process to be used for hooking.
 
-![](media_pe/dd1e62e00aa4249763bf33c275ba808e.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/dd1e62e00aa4249763bf33c275ba808e.png)
 
 Running the binary sysret.exe with the -pid parameter it will execute the
 shellcode into the kernel bypassing kernel code signing.
 
-![](media_pe/aac5b1461b1f8ca0935ba14f8003c6c5.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/aac5b1461b1f8ca0935ba14f8003c6c5.png)
 
-![](media_pe/ca37d14ef972adf2eeef3af5a310bebc.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/ca37d14ef972adf2eeef3af5a310bebc.png)
 
-![](media_pe/446f2c63bbaa036bd272920d5e0d405b.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/446f2c63bbaa036bd272920d5e0d405b.png)
 
 无法结束sysret.exe进程，结束当前conhost.exe可关闭cmd窗口，但仍具备高权限身份
 
-![](media_pe/8d1f21a467197b829c9309cc8d38a632.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/8d1f21a467197b829c9309cc8d38a632.png)
 
 **\#5). 存储凭据:**
 
@@ -3874,7 +3874,7 @@ this file is usually in the following directories:
 
 >   C:\\inetpub\\wwwroot\\web.config
 
-![](media_pe/e8c156fc3fc0d120742da7bd78b45bfb.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/e8c156fc3fc0d120742da7bd78b45bfb.png)
 
 Local administrators passwords can also retrieved via the Group Policy
 Preferences. The Groups.xml file which contains the password is cached locally
@@ -3907,7 +3907,7 @@ needed in order to obtain group policy updates.
 The static key which can decrypt passwords stored in Group Policy Preferences
 can be seen below:
 
-![](media_pe/fb6f70a86d5da704fdb482311c6f319b.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/fb6f70a86d5da704fdb482311c6f319b.png)
 
 Manual Exploitation
 
@@ -3915,39 +3915,39 @@ In order to exploit this issue manually it is needed to manually browse to the
 Groups.xml file which is stored in a shared directory in the domain controller
 and obtain the value of the attribute cpassword. CVE-2014-1812 KB2962486
 
-![](media_pe/a54c3bda0a0fdd3b8234fb0ff18fd84e.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/a54c3bda0a0fdd3b8234fb0ff18fd84e.png)
 
-![](media_pe/418ad310f4f1ee39fa68b9875dba8257.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/418ad310f4f1ee39fa68b9875dba8257.png)
 
-![](media_pe/17c38aa7754d3f80770a11baf0f07a16.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/17c38aa7754d3f80770a11baf0f07a16.png)
 
-![](media_pe/2a5c2a3e3b039b1ab058e94dde52218f.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/2a5c2a3e3b039b1ab058e94dde52218f.png)
 
-![](media_pe/57fb429a96800425072af0ce9b9d2da1.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/57fb429a96800425072af0ce9b9d2da1.png)
 
-![](media_pe/3f5e678f925471ee1fa0dcc9a56223ce.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/3f5e678f925471ee1fa0dcc9a56223ce.png)
 
-![](media_pe/ee1e17d6891a9ec02b59d8473ed3d049.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/ee1e17d6891a9ec02b59d8473ed3d049.png)
 
-![](media_pe/4b6650e251da252f57bad82d815f03cf.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/4b6650e251da252f57bad82d815f03cf.png)
 
 重新登录域内机器(域管):
 
-![](media_pe/46113473acb404af2ed798b1f1df3126.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/46113473acb404af2ed798b1f1df3126.png)
 
-![](media_pe/b0b98e6bd058de057ec5a604f73c50e7.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/b0b98e6bd058de057ec5a604f73c50e7.png)
 
-![](media_pe/aa5b845e6776cc4825cfe3661f06cad0.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/aa5b845e6776cc4825cfe3661f06cad0.png)
 
 重新登录域内机器(普通域用户):
 
-![](media_pe/736afb330c01ef4eb082ea0b086e1281.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/736afb330c01ef4eb082ea0b086e1281.png)
 
 https://bitbucket.org/grimhacker/gpppfinder/downloads/gp3finder_v4.0.exe
 
-![](media_pe/4c2dc81663ff541b63386696a26475ab.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/4c2dc81663ff541b63386696a26475ab.png)
 
-![](media_pe/216c6b60cf1b91644773ac612745da6c.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/216c6b60cf1b91644773ac612745da6c.png)
 
 ruby script for decrypting cpassword values:
 
@@ -4002,16 +4002,16 @@ SYSVOL.
 
 post/windows/gather/credentials/gpp
 
-![](media_pe/ae27890c1f576a0a69288b1246075965.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/ae27890c1f576a0a69288b1246075965.png)
 
 Since domain administrators can set up local administrators accounts through the
 Group Policy this can lead to privilege escalation. These credentials can be
 used with the PsExec Metasploit module in order to successfully login to the
 workstation as SYSTEM.
 
-![](media_pe/05e809d6527fc0993cb691cac51ccbf0.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/05e809d6527fc0993cb691cac51ccbf0.png)
 
-![](media_pe/bbf0beb34a12efa2cfa1ff61c2c78107.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/bbf0beb34a12efa2cfa1ff61c2c78107.png)
 
 PowerSploit
 
@@ -4030,7 +4030,7 @@ is possible to use Metasploit in order to inject a PowerShell payload into a
 specific process. This could allow the execution of PowerShell scripts directly
 from memory.
 
-![](media_pe/03a5e72258956fd346a6b8f3f2254294.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/03a5e72258956fd346a6b8f3f2254294.png)
 
 Then from the interactive PowerShell session the Invoke-Expression cmdlet could
 be utilized in order to drop and execute any PowerShell script that is locally
@@ -4059,11 +4059,11 @@ Instead of manually browsing all the files in the system it is also possible to
 run the following command in order to discover files that contain the word
 password:
 
-![](media_pe/c1413180f37207c8816c921d7b3a4923.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/c1413180f37207c8816c921d7b3a4923.png)
 
-![](media_pe/d618e3d7a9fcf3e00d2b8271abbff5a5.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/d618e3d7a9fcf3e00d2b8271abbff5a5.png)
 
-![](media_pe/c57ba9d0ec0b43867d6d8e9832f06e55.png)
+![](https://raw.githubusercontent.com/Scotoma8/CyberSecurity/master/ATT%26CK_Privilege_Escalation/media/c57ba9d0ec0b43867d6d8e9832f06e55.png)
 
 Third Party Software
 
