@@ -3,7 +3,7 @@ layout: post
 title: 资源搜集
 subtitle: 持续更新
 bigimg: /img/path.jpg
-tags: [Red-Team]
+tags: [Resource]
 ---
 
 **文章结构:**   
@@ -1768,4 +1768,3 @@ Networked
 23
 jarvis	
 
-*XMind: ZEN - Trial Version*
